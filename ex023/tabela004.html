@@ -6,18 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela com Dados</title>
     <style>
-
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bold;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
 
     </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
+    <table>
     <caption>Filmes Favoritos</caption>
     <thead>
-
+        <tr>
+            <th>Grupo</th>
+            <th>Nome</th>
+            <th colspan="3">Filmes</th>
+        </tr>
     </thead>
     <tbody>
+        <tr>
+            <th rowspan="3">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inseption</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Claudia Melo</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+            <td>JonycFilms</td>
+        </tr>
+        <tr>
+            <th rowspan="4">Homens</th>
+        </tr>
+        <tr>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Inception</td>
+            <td>Lanterna Verde</td>
+        </tr>
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Thor</td>
+            <td>Spider-Man</td>
+        </tr>
+        <tr>
+            <td>Fabiano</td>
+            <td>Stars Wars</td>
+            <td>Taxi Driver</td>
+            <td>Pimentinha</td>
+        </tr>
 
     </tbody>
+</table>
 </body>
 </html>
