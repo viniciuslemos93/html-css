@@ -26,14 +26,20 @@
     <caption>Filmes Favoritos</caption>
     <thead>
         <tr>
-            <th>Grupo</th>
-            <th>Nome</th>
-            <th colspan="3">Filmes</th>
-        </tr>
+            <th scope="col">Grupos</th><!--scope está em 'col', pois os dados dele estão abaixo-->
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th><!--scope está em 'colgroup', pois os dados abaixo estão mesclados em mais de uma coluna-->
+        </tr>                                           <!--scope é referente ao/s dados que estão armazenados -->    
     </thead>
+    <tfoot>
+        <tr>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tr>
+    </tfoot>
     <tbody>
         <tr>
-            <th rowspan="3">Mulheres</th>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -52,7 +58,7 @@
             <td>JonycFilms</td>
         </tr>
         <tr>
-            <th rowspan="4">Homens</th>
+            <th rowspan="4" scope="rowgroup">Homens</th>
         </tr>
         <tr>
             <td>Bruno Mendonça</td>
